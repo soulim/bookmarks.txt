@@ -21,7 +21,7 @@ https://sul.im
 
 ## Tools
 
-The plain text nature of bookmark files allows to use any program to manage URLs.The `bin/` directory of this repository contains `bookmarks` script that could be used to list existing and add new URLs. However nothing should stop you from building your own tools.
+The plain text nature of bookmark files allows to use any program to manage URLs. The `bin/` directory of this repository contains `bookmarks` script that could be used to list existing and add new URLs. However nothing should stop you from building your own tools.
 
 ## Usage
 

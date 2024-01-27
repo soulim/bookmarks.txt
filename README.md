@@ -41,5 +41,9 @@ $ ./bin/bookmarks https://github.com/soulim/bookmarks.txt
 
 bookmarks.txt is open to code contributions for bug fixes only. As features might carry a long-term maintenance burden, they will not be accepted at this time. Please submit an issue if you have a feature you would like to request.
 
+## License
+
+See [LICENSE](LICENSE) for license text.
+
 
 [fzf]: https://github.com/junegunn/fzf

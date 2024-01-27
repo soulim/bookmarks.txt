@@ -28,13 +28,13 @@ The plain text nature of bookmark files allows to use any program to manage URLs
 Use [fzf] to select a URL and open it in the default browser:
 
 ```ShellSession
-$ ./bin/bookmarks | fzf | xargs open
+./bin/bookmarks | fzf | xargs open
 ```
 
 Add a new URL:
 
 ```ShellSession
-$ ./bin/bookmarks https://github.com/soulim/bookmarks.txt
+./bin/bookmarks https://github.com/soulim/bookmarks.txt
 ```
 
 ## Contributing

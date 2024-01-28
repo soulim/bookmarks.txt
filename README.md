@@ -37,6 +37,13 @@ Add a new URL:
 ./bin/bookmarks https://github.com/soulim/bookmarks.txt
 ```
 
+This is how I use bookmarks.txt:
+
+- `$HOME/bookmarks.txt` contains URLs useful in any context. These are "global" addresses.
+- Each project directory has "local" `bookmarks.txt` files with URLs pointing to tools specific to each project (repositories, monitoring tools, dashboards, and so on).
+- A symbolic link `$HOME/bin/bookmarks` point to `bin/bookmarks` from this directory.
+- With help of [fzf] I have a nice menu with fuzzy search to select URLs and open them automatically.
+
 ## Contributing
 
 bookmarks.txt is open to code contributions for bug fixes only. As features might carry a long-term maintenance burden, they will not be accepted at this time. Please submit an issue if you have a feature you would like to request.

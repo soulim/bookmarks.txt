@@ -4,7 +4,7 @@
 
 url=${1:-}
 
-if [[ -n "$url" ]]
+if [ -n "$url" ]
 then
 	echo "$url" >> bookmarks.txt
 else

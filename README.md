@@ -4,7 +4,7 @@ bookmarks.txt is a concept of keeping bookmarks in plain text files.
 
 ## Principals
 
-- Bookmark URLs are stored in files named `bookmarks.txt`. The format is described below.
+- Bookmarked URLs are stored in files named `bookmarks.txt`. The format is described below.
 - A "global" bookmarks file is located in the home directory (`$HOME/bookmarks.txt`).
 - "Local" bookmarks files could exist in different directories as well.
 

@@ -1,6 +1,20 @@
 #!/usr/bin/env sh
 
 # bookmarks [URL]
+#
+# bookmarks prints content of conventional `bookmarks.txt` files.
+# See https://github.com/soulim/bookmarks.txt
+#
+# Usage:
+#
+#   # Print content of `bookmarks.txt` files stored in $HOME and $PWD. 
+#   bookmarks
+#
+#   # Add a new URL to `bookmarks.txt` file in $PWD.
+#   bookmarks https://www.example.com
+
+set -o errexit # Always exit on errors.
+set -o nounset # Treat unset variables as errors.
 
 url=${1:-}
 

@@ -25,5 +25,5 @@ else
 	global="$HOME/bookmarks.txt"
 	local="$PWD/bookmarks.txt"
 
-	cat "$global" "$local" 2>/dev/null || true | sort
+	cat "$global" "$local" 2>/dev/null || true
 fi

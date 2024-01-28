@@ -1,3 +1,2 @@
 https://www.example.com
 https://sul.im
-https://rollbar.com

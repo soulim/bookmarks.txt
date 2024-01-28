@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+# bookmarks [URL]
+
+url=${1:-}
+
+if [[ -n "$url" ]]
+then
+	echo "$url" >> bookmarks.txt
+else
+	global="$HOME/bookmarks.txt"
+	local="$PWD/bookmarks.txt"
+
+	cat "$global" "$local" 2>/dev/null || true | sort
+fi

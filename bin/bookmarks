@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# bookmarks [URL]
+# bookmarks [URL] [title]
 #
 # bookmarks prints content of conventional `bookmarks.txt` files.
 # See https://github.com/soulim/bookmarks.txt
@@ -17,10 +17,11 @@ set -o errexit # Always exit on errors.
 set -o nounset # Treat unset variables as errors.
 
 url=${1:-}
+title=${2:-}
 
 if [ -n "$url" ]
 then
-	echo "$url" >> bookmarks.txt
+	echo "$url $title" >> bookmarks.txt
 else
 	global="$HOME/bookmarks.txt"
 	local="$PWD/bookmarks.txt"

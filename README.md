@@ -10,14 +10,29 @@ bookmarks.txt is a concept of keeping bookmarks in plain text files.
 
 ## Format
 
-URLs are stored one per line without leading and trailing space characters.
-
-Example:
+URLs are stored one per line and could be accompanied with optional titles.
 
 ```
-https://www.example.com
-https://sul.im
+URL [title]
 ```
+
+Examples:
+
+- a URL without any title
+
+  ```
+  https://www.example.com
+  -----------------------
+  ^
+  |-- URL
+  ```
+- a URL with a title
+  ```
+  https://sul.im personal website
+  -------------- ----------------
+  ^              ^
+  |-- URL        |-- optional title
+  ```
 
 ## Tools
 
@@ -28,7 +43,7 @@ The plain text nature of bookmark files allows to use any program to manage URLs
 Use [fzf] to select a URL and open it in the default browser:
 
 ```ShellSession
-./bin/bookmarks | fzf | xargs open
+./bin/bookmarks | fzf | cut -d ' ' -f 1 | xargs open
 ```
 
 Add a new URL:

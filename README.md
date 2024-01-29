@@ -10,7 +10,7 @@ bookmarks.txt is a concept of keeping bookmarks in plain text files.
 
 ## Format
 
-URLs are stored one per line and could be accompanied with optional titles.
+URLs are stored one per line and could be accompanied with optional titles. Titles are separated from URLs with one space character.
 
 ```
 URL [title]
@@ -24,14 +24,14 @@ Examples:
   https://www.example.com
   -----------------------
   ^
-  |-- URL
+  URL
   ```
 - a URL with a title
   ```
   https://sul.im personal website
   -------------- ----------------
   ^              ^
-  |-- URL        |-- optional title
+  URL            Optional title
   ```
 
 ## Tools
